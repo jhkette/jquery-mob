@@ -1,0 +1,29 @@
+Look at how to do use cases. 
+
+One page widget in external page on each individual single html file 
+. CSS needs to be on bothpages. 
+
+Every page will have pageone.css and pageone.js in the head. 
+
+Navbar is better - than fixed toolbar - could use symbols. 
+
+
+You could use list view as a panel !important - this is a good idea. 
+List View is in a panel
+
+
+For navpanel ie hamburger menu you will need different id each time.
+The div has an id and the a href links to the id. Can't use the same id
+on different pages. Name id and then name of page. 
+
+<div data-role="page" id="first" data-theme="a">
+<div data-role="panel" id="navpanel"> <!-- panel content goes here -->
+</div>
+.....
+</div>
+
+<a href="#navpanel" class="ui-btn ui-corner-all à ui-icon-bars ui-btn-icon-notext"></a>
+
+ie the navpanel needs to be id='navpanal-page-one'.
+
+// dont' mess around with width and height of panel too much. 
