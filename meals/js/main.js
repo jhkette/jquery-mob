@@ -32,6 +32,19 @@ function addMeal(meal){
         meals.push(meal)
         localStorage.setItem('meals', JSON.stringify(meals))
     }
-    $.mobile.changePage('#home');
+     $('#tagline').val(),
+     $('#type').val(),
+     $('#date').val(),
+     $('#calories').val(),
+     $('#description').val()
+     $.mobile.changePage('#home');
 
+}
+
+function getMeals(){
+    let output ='';
+    if(localStorage.getItem('meals') === null || localStorage.getItem('meals') === '[]'){
+        output = '<li>No meals found</li>';
+        $('#meals').html(output).listview('refresh')
+    }
 }
