@@ -32,3 +32,22 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.content-featured{
+    display: flex;
+    justify-content: space-around;
+   
+  
+    height: 500px;
+}
+
+.feature-text{
+
+ padding: 10px;
+}
+
+.image {
+  height: 500px;
+  width: 500px;
+  border: 1px solid #a4a4a4;
+}
