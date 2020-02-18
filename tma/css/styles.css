@@ -3,7 +3,9 @@
     margin: 0;
 }
 .lead-image{
-    background-image: url('../images/bbk.jpg');
+    background-image: url('../images/app.png');
+    background-repeat: no-repeat;
+    background-position: center;
     height: 450px;
     width: 100%;
     background-position: center;
@@ -16,11 +18,12 @@
 }
 .ui-btn.lead{
     position: absolute;
-    width: 150px;
+    width: 130px;
     top: 75%;
     left: 50%;
-    margin: -93px;
+    margin: -65px;
     background-color: #0e108a;
+    font-size: 14px;
 }
 
 #common {
@@ -36,9 +39,7 @@
 .content-featured{
     display: flex;
     justify-content: space-around;
-   
-  
-    height: 500px;
+    height: 200px;
 }
 
 .feature-text{
