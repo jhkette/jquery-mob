@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mobile App Development</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/57986a17e9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div data-role="page" id="first" data-theme="a" data-add-back-btn="true">
+      <div
+        data-role="panel"
+        id="navpanel"
+        data-position="right"
+        data-display="overlay"
+      >
+        <!-- panel content goes here -->
+      </div>
+      <div data-role="header">
+        <div data-role="navbar" class="header-nav">
+          <a
+            href="#navpanel"
+            id="ham"
+            class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
+          ></a>
+          <div class="back-home">
+              <a
+              href="contact.html"
+              data-transition="slideUp"
+              data-icon="phone"
+              class="property"
+            ></a>
+            <a data-rel="back" data-icon="back" class="back"></a>
+            <a href="/" data-icon="home" class="home"></a>
+          </div>
+        </div>
+      </div>
+      <div data-role="content" id="container">
+        <div class="intro">
+          <h1>Search for a property</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+            assumenda ut sit nostrum pariatur enim ipsa asperiores excepturi
+            quis repellendus soluta quia amet, repellat necessitatibus
+            voluptatem quos aliquam. Nulla, nemo.
+          </p>
+        </div>
+        <form id="searchForm">
+          <div class="ui-field-contain">
+            <div class="location-container">
+              <label>Location</label>
+              <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="search"
+                class="property-input"
+              />
+            </div>
+
+            <div class="mm-container">
+              <label>Min amount</label>
+              <input
+                type="number"
+                name="Max"
+                id="min"
+                placeholder="Min"
+                min="300"
+                max="500"
+              />
+            </div>
+            <div class="mm-container">
+              <label>Max amount</label>
+              <input
+                type="number"
+                name="Min"
+                id="max"
+                placeholder="Max"
+                min="300"
+                max="500"
+              />
+            </div>
+            <div class="container-checkboxes">
+              <fieldset data-role="controlgroup">
+                <input
+                  type="checkbox"
+                  id="flat"
+                  name="flat"
+                  value="flat"
+                  class="custom"
+                />
+                <label for="flat"> Flat</label>
+              </fieldset>
+              <fieldset data-role="controlgroup">
+                <input
+                  type="checkbox"
+                  id="studio"
+                  name="studio"
+                  value="studio"
+                />
+                <label for="studio"> Studio</label>
+              </fieldset>
+              <fieldset data-role="controlgroup">
+                <input
+                  type="checkbox"
+                  id="sharedroom"
+                  name="sharedroom"
+                  value="sharedroom"
+                />
+                <label for="sharedroom"> Shared room</label>
+              </fieldset>
+              <input type="submit" value="Submit" class="submit" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div data-role="footer" data-position="fixed" data-id="footernav">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#second">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
