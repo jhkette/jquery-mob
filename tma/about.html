@@ -35,21 +35,25 @@
         </ul>
       </div>
       <div data-role="header">
-        <div data-role="navbar" class="header-nav">
-          <a
-            href="#navpanel"
-            class="ui-btn ui-corner-all à ui-icon-bars ui-btn-icon-notext"
-            id="ham"
-            >hello</a
-          >
+          <div data-role="navbar" class="header-nav">
+              <a
+                href="#navpanel"
+                id="ham"
+                class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
+              ></a>
+              <div class="back-home">
+                  <a
+                  href="contact.html"
+                  data-transition="slideUp"
+                  data-icon="phone"
+                  class="property"
+                ></a>
+                <a data-rel="back" data-icon="back" class="back"></a>
+                <a href="/" data-icon="home" class="home"></a>
+              </div>
+            </div>
 
-          <ul id="common">
-            <li><a href="#signup" data-transition="slideUp">Sign up</a></li>
-            <li><a href="#login" data-transition="slideUp">Login</a></li>
-          </ul>
-        </div>
-
-        <!-- panel content goes here -->
+       
       </div>
       <div data-role="content" id="container" class="flex-container">
         <div class="lead-image"></div>

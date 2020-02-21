@@ -18,14 +18,25 @@
   </head>
 
   <body>
-    <div data-role="page" id="first" data-theme="a" data-add-back-btn="true">
+    <div data-role="page" id="first" data-add-back-btn="true">
       <div
         data-role="panel"
         id="navpanel"
         data-position="right"
         data-display="overlay"
       >
-        <!-- panel content goes here -->
+      <h2>Panel Navigation</h2>
+      <ul data-role="listview">
+        <li><a href="#" data-transition="slidefade">Page 1</a></li>
+        <li><a href="#" data-transition="slidefade">Page 2</a></li>
+        <li><a href="#" data-transition="slidefade">Page 3</a></li>
+        <li><a href="#" data-transition="slidefade">Page 4</a></li>
+        <li><a href="#" data-transition="slidefade">Page 5</a></li>
+        <li><a href="#" data-transition="slidefade">Page 6</a></li>
+        <li><a href="#" data-transition="slidefade">Page 7</a></li>
+        <li><a href="#" data-transition="slidefade">Page 8</a></li>
+        <li><a href="#" data-transition="slidefade">Page 9</a></li>
+      </ul>
       </div>
       <div data-role="header">
         <div data-role="navbar" class="header-nav">
@@ -37,12 +48,12 @@
           <div class="back-home">
               <a
               href="contact.html"
-              data-transition="slideUp"
+              data-transition="slideFade"
               data-icon="phone"
               class="property"
             ></a>
-            <a data-rel="back" data-icon="back" class="back"></a>
-            <a href="/" data-icon="home" class="home"></a>
+            <a data-rel="back" data-icon="back"  data-transition="slideFade" class="back"></a>
+            <a href="/" data-icon="home"  data-transition="slideFade" class="home" ></a>
           </div>
         </div>
       </div>
@@ -59,7 +70,7 @@
         <form id="searchForm">
           <div class="ui-field-contain">
             <div class="location-container">
-              <label>Location</label>
+              <div class="label"><label for ="location" >Location</label></div>
               <input
                 type="text"
                 name="location"
@@ -70,7 +81,7 @@
             </div>
 
             <div class="mm-container">
-              <label>Min amount</label>
+                <div class="label"><label for ="min">Min cost</label></div>
               <input
                 type="number"
                 name="Max"
@@ -81,7 +92,7 @@
               />
             </div>
             <div class="mm-container">
-              <label>Max amount</label>
+                <div class="label"><label for ="max">Max cost</label></div>
               <input
                 type="number"
                 name="Min"

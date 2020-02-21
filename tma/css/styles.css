@@ -3,6 +3,9 @@ p,h1,h3{
     margin: 0;
     line-height: 1.45;
 }
+.intro p {
+  padding: 12px 0;
+}
 h1{
   padding: 25px 0;
 }
@@ -10,9 +13,7 @@ h1{
 #container {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+ 
 }
 .flex-container{
   display: flex;
@@ -133,11 +134,13 @@ h1{
   display: block;
 
 }
+.label {
+  min-width: 45px;
+  display: block;
+}
 .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
   width: 340px;
   margin: 10px 35px;
- 
-  
 }
 
 .ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
@@ -148,9 +151,6 @@ h1{
 .container-checkboxes{
   margin: 15px 35px;
 }
-/* .ui-btn.ui-corner-all.ui-btn-inherit.ui-btn-icon-left.ui-checkbox-off {
-  
-} */
 
 .ui-controlgroup-vertical .ui-controlgroup-controls .ui-btn.ui-last-child {
   padding-left: 40px;
