@@ -44,6 +44,7 @@
               <div class="back-home">
                   <a
                   href="contact.html"
+                  data-prefetch
                   data-transition="slideUp"
                   data-icon="phone"
                   class="property"
@@ -56,8 +57,9 @@
        
       </div>
       <div data-role="content" id="container" class="flex-container">
-        <div class="lead-image"></div>
+        <div class="lead-image small"></div>
         <div class="intro">
+          <h1>About us</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
             nobis dolore eligendi amet laudantium fugiat, dolorem maiores nihil
@@ -66,15 +68,16 @@
           </p>
         </div>
       </div>
-      <div data-role="footer">
-        <div data-role="navbar">
-          <ul>
-            <li><a href="#contact" data-transition="slideUp">Contact Us</a></li>
-            <li><a href="#about" data-transition="slideUp">About us</a></li>
-            <li><a href="#info" data-transition="slideUp">Information</a></li>
-          </ul>
+      <div data-role="footer" data-position="fixed" data-id="footernav">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="contact.html" data-prefetch>Contact</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#second">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
     </div>
   </body>
 </html>
