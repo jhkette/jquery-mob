@@ -1,6 +1,7 @@
 p,
 h1,
-h3 {
+h2,
+h3, h4 {
   padding: 0;
   margin: 0;
   line-height: 1.45;
@@ -32,7 +33,7 @@ h1 {
     rgba(114, 114, 114, 0.53)
   ),
   url("../images/app.png");
-  height: 280px;
+  height: 245px;
 
 }
 
@@ -67,7 +68,7 @@ h1 {
 }
 
 .property-table{
-  padding: 25px 35px; 
+  padding: 25px 15px; 
 }
 
 .lead-image.small {
@@ -89,11 +90,11 @@ h1 {
   color: white !important;
   text-shadow: none !important;
   border: 0 !important;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .ui-btn.secondary {
-  margin: 10px 15px 30px 15px;
+  margin: 0px 15px 30px 15px;
   padding-right: 35px;
   display: flex;
   justify-content: space-between;
@@ -101,11 +102,9 @@ h1 {
   align-content: center;
   align-items: center;
   color: #484848 !important;
+  border-radius: 4px;
+  
 }
-
-/* .ui-btn.secondary  a{
-  color: #38c;
-} */
 
 
 #common {
@@ -135,11 +134,11 @@ h1 {
 }
 
 .feature-text {
-  padding: 20px 15px 15px 15px;
+  padding: 15px 35px 15px 15px;
 }
 
 .image {
-  padding: 15px;
+  padding: 10px 0px 10px 15px;
 }
 
 .image img {
@@ -174,6 +173,19 @@ h1 {
   padding: 18px;
 }
 
+.ui-link.ui-btn.ui-icon-lock.ui-btn-icon-top{
+  border: 0;
+  background-color: #7aa7c6;
+  padding: 18px;
+}
+
+.ui-link.ui-btn.ui-icon-user.ui-btn-icon-top{
+  border: 0;
+  background-color: #7aa7c6;
+  padding: 18px;
+
+}
+
 .back.ui-link.ui-icon-back:hover {
   border: 0;
   background-color: #7aa7c6;
@@ -202,7 +214,7 @@ h1 {
 }
 
 .intro {
-  padding: 25px 35px;
+  padding: 20px 15px;
 }
 .ui-mobile label {
   font-size: 15px;
@@ -213,6 +225,10 @@ h1 {
   min-width: 45px;
   display: block;
 }
+
+input[type="submit"]{
+  left: 15px !important;
+}
 .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
   width: 340px;
   margin: 10px 35px;
@@ -220,7 +236,7 @@ h1 {
 
 .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   width: 180px;
-  margin: 35px 0px;
+  margin: 35px 35px;
   /* height: 20px; */
 }
 .container-checkboxes {
