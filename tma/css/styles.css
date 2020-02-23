@@ -1,62 +1,112 @@
-p,h1,h3{
-    padding: 0;
-    margin: 0;
-    line-height: 1.45;
+p,
+h1,
+h3 {
+  padding: 0;
+  margin: 0;
+  line-height: 1.45;
 }
 .intro p {
   padding: 12px 0;
 }
-h1{
+h1 {
   padding: 25px 0;
 }
-
+.intro h1 {
+  padding-bottom: 1px;
+  display: inline-block;
+  border-bottom: 4px solid #7aa7c6;
+  margin-bottom: 40px;
+}
 #container {
   padding: 0;
   margin: 0;
- 
 }
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: column;
+}
+.lead-image.feature{
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(114, 114, 114, 0.53)
+  ),
+  url("../images/app.png");
+  height: 280px;
 
 }
 
 .lead-image {
-  background-image: url("../images/app.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0),
+      rgba(114, 114, 114, 0.53)
+    ),
+    url("../images/bbk.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 365px;
   width: 100%;
   background-position: center;
+  background-size: cover;
   position: relative;
   padding: 0;
+}
+
+.lead-image h1 {
+  color: white;
+  display: inline-block;
+  position: relative;
+  top: 90px;
+  left: 50%;
+  margin-left: -150px;
+  margin-bottom: 50px;
+  width: 320px;
+  padding-bottom: 1px;
+  border-bottom: 4px solid #7aa7c6;
+}
+
+.property-table{
+  padding: 25px 35px; 
 }
 
 .lead-image.small {
   height: 200px;
 }
 
-
 #ham {
   padding: 0px;
   margin-left: 25px;
-  
 }
 .ui-btn.lead {
   position: absolute;
   width: 190px;
-  top: 75%;
+  top: 80%;
   left: 50%;
   margin: -90px;
-  background-color: #0e108a;
-  font-size: 14px;
+  background-color: #7aa7c6 !important;
+  font-size: 16px;
+  color: white !important;
+  text-shadow: none !important;
+  border: 0 !important;
+  border-radius: 2px;
 }
+
 .ui-btn.secondary {
   margin: 10px 15px 30px 15px;
   padding-right: 35px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  background-color: #d3d3d3 !important;
+  align-content: center;
+  align-items: center;
+  color: #484848 !important;
 }
+
+/* .ui-btn.secondary  a{
+  color: #38c;
+} */
+
 
 #common {
   width: 200px;
@@ -66,6 +116,15 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #7aa7c6;
+}
+
+/* .ui-page-theme-a.ui-bar-inherit.ui-header.ui-bar-inherit {
+  !important; 
+} */
+
+.ui-header.ui-bar-inherit {
+  border: 1px solid #2e2e2e !important;
 }
 
 .content-featured {
@@ -82,63 +141,73 @@ h1{
 .image {
   padding: 15px;
 }
-/* .min-max {
-  
- 
-} */
 
-.mm-container{
+.image img {
+  width: 200px !important;
+}
+
+
+.mm-container {
   margin-left: 35px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 230px;
 }
-.location-container{
+.location-container {
   margin-left: 35px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 290px;
-
 }
 
+.ui-btn::after {
+  background-size: 20px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
 
 .back.ui-link.ui-icon-back {
   border: 0;
-  background-color: #E9E9E9;
-  padding: 17.5px;
+  background-color: #7aa7c6;
+  padding: 18px;
+}
+
+.back.ui-link.ui-icon-back:hover {
+  border: 0;
+  background-color: #7aa7c6;
+  padding: 18px;
 }
 
 .home.ui-link.ui-btn.ui-icon-home {
   border: 0;
-  background-color: #E9E9E9;
-  padding: 17.5px;
+  background-color: #7aa7c6;
+  padding: 18px;
 }
 
-.property.ui-link.ui-btn.ui-icon-phone.ui-btn-icon-top{
+.property.ui-link.ui-btn.ui-icon-phone.ui-btn-icon-top {
   margin-right: 5px;
 }
 
-.ui-link.ui-btn.ui-icon-phone.ui-btn-icon-top{
+.ui-link.ui-btn.ui-icon-phone.ui-btn-icon-top {
   border: 0;
-  background-color: #E9E9E9;
-  padding: 17.5px;
+  background-color: #7aa7c6;
+  padding: 18px;
   margin-right: 25px;
 }
 
-.back-home{
+.back-home {
   padding: 0 15px;
 }
 
-.intro{
+.intro {
   padding: 25px 35px;
 }
-.ui-mobile label{
+.ui-mobile label {
   font-size: 15px;
   font-weight: normal;
   display: block;
-
 }
 .label {
   min-width: 45px;
@@ -149,12 +218,12 @@ h1{
   margin: 10px 35px;
 }
 
-.ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
+.ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   width: 180px;
-  margin:35px 0px;
+  margin: 35px 0px;
   /* height: 20px; */
 }
-.container-checkboxes{
+.container-checkboxes {
   margin: 15px 35px;
 }
 
@@ -163,5 +232,5 @@ h1{
   font-weight: normal;
   font-size: 15px !important;
   border: 0;
-  background: #F9F9F9;
+  background: #f9f9f9;
 }

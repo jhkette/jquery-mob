@@ -43,7 +43,13 @@
       data-position="right"
       data-display="overlay"
     >
-      <!-- panel content goes here -->
+    <h2>Panel Navigation</h2>
+    <ul data-role="listview">
+      <li><a href="index.html" data-transition="slidefade">Home</a></li>
+      <li><a href="about.html" data-transition="slidefade">About us</a></li>
+      <li><a href="properties.html" data-transition="slidefade">Search properties</a></li>
+      <li><a href="contact.html" data-transition="slidefade" data-prefetch>Contact</a></li>
+    </ul>
     </div>
     <div data-role="header">
       <div data-role="navbar" class="header-nav">
@@ -55,7 +61,7 @@
         <div class="back-home">
 
           <a data-rel="back" data-icon="back" class="back"></a>
-          <a href="/" data-icon="home" class="home"></a>
+          <a href="/" data-icon="home" class="home" data-transition="slidefade"></a>
         </div>
       </div>
     </div>

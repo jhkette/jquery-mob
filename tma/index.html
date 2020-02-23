@@ -24,18 +24,21 @@
         data-position="right"
         data-display="overlay"
       >
-      <h2>Panel Navigation</h2>
-      <ul data-role="listview">
-        <li><a href="#" data-transition="slidefade">Page 1</a></li>
-        <li><a href="#" data-transition="slidefade">Page 2</a></li>
-        <li><a href="#" data-transition="slidefade">Page 3</a></li>
-        <li><a href="#" data-transition="slidefade">Page 4</a></li>
-        <li><a href="#" data-transition="slidefade">Page 5</a></li>
-        <li><a href="#" data-transition="slidefade">Page 6</a></li>
-        <li><a href="#" data-transition="slidefade">Page 7</a></li>
-        <li><a href="#" data-transition="slidefade">Page 8</a></li>
-        <li><a href="#" data-transition="slidefade">Page 9</a></li>
-      </ul>
+        <h2>Panel Navigation</h2>
+        <ul data-role="listview">
+          <li><a href="index.html" data-transition="slidefade">Home</a></li>
+          <li><a href="about.html" data-transition="slidefade">About us</a></li>
+          <li>
+            <a href="properties.html" data-transition="slidefade"
+              >Search properties</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" data-transition="slidefade" data-prefetch
+              >Contact</a
+            >
+          </li>
+        </ul>
       </div>
       <div data-role="header">
         <div data-role="navbar" class="header-nav">
@@ -56,11 +59,19 @@
       </div>
       <div data-role="content" id="container">
         <div class="lead-image">
-          <a href="properties.html" class="ui-btn lead" data-transition="slidefade">View properties</a>
+          <h1>Welcome to Zedland</h1>
+          <a
+            href="properties.html"
+            class="ui-btn lead"
+            data-transition="slidefade"
+            >View all properties</a
+          >
         </div>
         <div class="content-featured">
           <div class="image">
-            <a href="featured.html" data-transition="slidefade"><img src="./images/app1.png"/></a>
+            <a href="featured.html" data-transition="slidefade"
+              ><img src="./images/design.jpg"
+            /></a>
           </div>
           <div class="feature-text">
             <h3>Featured room</h3>
@@ -73,11 +84,15 @@
           </div>
         </div>
         <a href="#" data-transition="slidefade" class="ui-btn secondary"
-          ><span style="font-size: 2em; color: #919191;"
+          >View flats<span style="font-size: 1.5em; color: #949494;"
             ><i class="fas fa-arrow-circle-right"></i></span
         ></a>
         <a href="#" data-transition="slidefade" class="ui-btn secondary"
-          ><span style="font-size: 2em; color: #919191"
+          >View houses<span style="font-size: 1.5em; color: #949494;"
+            ><i class="fas fa-arrow-circle-right"></i></span
+        ></a>
+        <a href="roomshare.html" data-transition="slidefade" class="ui-btn secondary"
+          >View shared houses<span style="font-size: 1.5em; color: #949494;"
             ><i class="fas fa-arrow-circle-right"></i></span
         ></a>
       </div>

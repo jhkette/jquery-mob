@@ -23,38 +23,39 @@
       >
         <h2>Panel Navigation</h2>
         <ul data-role="listview">
-          <li><a href="#" data-transition="slidefade">Page 1</a></li>
-          <li><a href="#" data-transition="slidefade">Page 2</a></li>
-          <li><a href="#" data-transition="slidefade">Page 3</a></li>
-          <li><a href="#" data-transition="slidefade">Page 4</a></li>
-          <li><a href="#" data-transition="slidefade">Page 5</a></li>
-          <li><a href="#" data-transition="slidefade">Page 6</a></li>
-          <li><a href="#" data-transition="slidefade">Page 7</a></li>
-          <li><a href="#" data-transition="slidefade">Page 8</a></li>
-          <li><a href="#" data-transition="slidefade">Page 9</a></li>
+          <li><a href="index.html" data-transition="slidefade">Home</a></li>
+          <li><a href="about.html" data-transition="slidefade">About us</a></li>
+          <li>
+            <a href="properties.html" data-transition="slidefade"
+              >Search properties</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" data-transition="slidefade" data-prefetch
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
       <div data-role="header">
-          <div data-role="navbar" class="header-nav">
-              <a
-                href="#navpanel"
-                id="ham"
-                class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
-              ></a>
-              <div class="back-home">
-                  <a
-                  href="contact.html"
-                  data-prefetch
-                  data-transition="slideUp"
-                  data-icon="phone"
-                  class="property"
-                ></a>
-                <a data-rel="back" data-icon="back" class="back"></a>
-                <a href="/" data-icon="home" class="home"></a>
-              </div>
-            </div>
-
-       
+        <div data-role="navbar" class="header-nav">
+          <a
+            href="#navpanel"
+            id="ham"
+            class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
+          ></a>
+          <div class="back-home">
+            <a
+              href="contact.html"
+              data-prefetch
+              data-transition="slideUp"
+              data-icon="phone"
+              class="property"
+            ></a>
+            <a data-rel="back" data-icon="back" class="back"></a>
+            <a href="/" data-icon="home" class="home"></a>
+          </div>
+        </div>
       </div>
       <div data-role="content" id="container" class="flex-container">
         <div class="lead-image small"></div>
@@ -69,15 +70,13 @@
         </div>
       </div>
       <div data-role="footer" data-position="fixed" data-id="footernav">
-          <div data-role="navbar">
-            <ul>
-              <li><a href="contact.html" data-prefetch>Contact</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#second">Login</a></li>
-              <li><a href="register.html">Register</a></li>
-            </ul>
-          </div>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="contact.html" data-prefetch>Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
         </div>
+      </div>
     </div>
   </body>
 </html>
