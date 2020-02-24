@@ -1,7 +1,8 @@
 p,
 h1,
 h2,
-h3, h4 {
+h3,
+h4 {
   padding: 0;
   margin: 0;
   line-height: 1.45;
@@ -26,15 +27,14 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.lead-image.feature{
+.lead-image.feature {
   background-image: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0),
-    rgba(114, 114, 114, 0.53)
-  ),
-  url("../images/app.png");
+      to top,
+      rgba(255, 255, 255, 0),
+      rgba(114, 114, 114, 0.53)
+    ),
+    url("../images/app.png");
   height: 245px;
-
 }
 
 .lead-image {
@@ -67,8 +67,8 @@ h1 {
   border-bottom: 4px solid #7aa7c6;
 }
 
-.property-table{
-  padding: 25px 15px; 
+.property-table {
+  padding: 25px 15px;
 }
 
 .lead-image.small {
@@ -103,9 +103,7 @@ h1 {
   align-items: center;
   color: #484848 !important;
   border-radius: 4px;
-  
 }
-
 
 #common {
   width: 200px;
@@ -145,7 +143,6 @@ h1 {
   width: 200px !important;
 }
 
-
 .mm-container {
   margin-left: 35px;
   display: flex;
@@ -173,17 +170,16 @@ h1 {
   padding: 18px;
 }
 
-.ui-link.ui-btn.ui-icon-lock.ui-btn-icon-top{
+.ui-link.ui-btn.ui-icon-lock.ui-btn-icon-top {
   border: 0;
   background-color: #7aa7c6;
   padding: 18px;
 }
 
-.ui-link.ui-btn.ui-icon-user.ui-btn-icon-top{
+.ui-link.ui-btn.ui-icon-user.ui-btn-icon-top {
   border: 0;
   background-color: #7aa7c6;
   padding: 18px;
-
 }
 
 .back.ui-link.ui-icon-back:hover {
@@ -226,7 +222,7 @@ h1 {
   display: block;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   left: 15px !important;
 }
 .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {

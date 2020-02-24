@@ -19,21 +19,48 @@
 
   <body>
     <div data-role="page" id="first" data-add-back-btn="true">
-        <div
+      <div
         data-role="panel"
         id="navpanel"
         data-position="right"
         data-display="overlay"
       >
-      <ul data-role="listview">
+        <ul data-role="listview">
           <li data-role="list-divider">Zedland</li>
-          <li><a href="index.html#first" data-transition="slidefade"  rel="external">Home</a></li>
+          <li>
+            <a
+              href="index.html#first"
+              data-transition="slidefade"
+              rel="external"
+              >Home</a
+            >
+          </li>
           <li><a href="about.html" data-transition="slidefade">About</a></li>
-          <li><a href="contact.html" data-prefetch data-transition="slidefade">Contact</a></li>
-          <li><a href="properties.html"  data-transition="slidefade">Properties</a></li>
+          <li>
+            <a href="contact.html" data-prefetch data-transition="slidefade"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="properties.html" data-transition="slidefade">Properties</a>
+          </li>
           <li data-role="list-divider">Account</li>
-          <li><a href="index.html#login" data-transition="slidefade"  rel="external">Login</a></li>
-          <li><a href="index.html#register" data-transition="slidefade"  rel="external">Register</a></li>
+          <li>
+            <a
+              href="index.html#login"
+              data-transition="slidefade"
+              rel="external"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#register"
+              data-transition="slidefade"
+              rel="external"
+              >Register</a
+            >
+          </li>
         </ul>
       </div>
       <div data-role="header">
@@ -68,7 +95,8 @@
               title="back"
             ></a>
             <a
-              href="/"
+              href="index.html#first"
+              rel="external"
               data-icon="home"
               data-transition="slideFade"
               class="home"
@@ -110,7 +138,9 @@
               <tr>
                 <th>NW</th>
                 <td>
-                  <a href="orchard.html"  data-transition="slideFade">Flat on Orchard street</a>
+                  <a href="orchard.html" data-transition="slideFade"
+                    >Flat on Orchard street</a
+                  >
                 </td>
                 <td>500</td>
                 <td>Flat</td>
@@ -118,7 +148,9 @@
               <tr>
                 <th>NE</th>
                 <td>
-                  <a href="orchard.html"  data-transition="slideFade">House in Stoke Newington</a>
+                  <a href="orchard.html" data-transition="slideFade"
+                    >House in Stoke Newington</a
+                  >
                 </td>
                 <td>700</td>
                 <td>House</td>
@@ -126,7 +158,7 @@
               <tr>
                 <th>SW</th>
                 <td>
-                  <a href="orchard.html"  data-transition="slideFade"
+                  <a href="orchard.html" data-transition="slideFade"
                     >Shared brixton flat</a
                   >
                 </td>
@@ -139,10 +171,10 @@
       </div>
       <div data-role="footer" data-position="fixed" data-id="footernav">
         <div data-role="navbar">
-            <ul>
-                <li><a href="contact.html" data-prefetch>Contact</a></li>
-                <li><a href="about.html">About</a></li>
-              </ul>
+          <ul>
+            <li><a href="contact.html" data-prefetch>Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
         </div>
       </div>
     </div>

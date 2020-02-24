@@ -10,6 +10,10 @@
     />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/57986a17e9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -20,15 +24,42 @@
         data-position="right"
         data-display="overlay"
       >
-      <ul data-role="listview">
+        <ul data-role="listview">
           <li data-role="list-divider">Zedland</li>
-          <li><a href="index.html#first" data-transition="slidefade"  rel="external">Home</a></li>
+          <li>
+            <a
+              href="index.html#first"
+              data-transition="slidefade"
+              rel="external"
+              >Home</a
+            >
+          </li>
           <li><a href="about.html" data-transition="slidefade">About</a></li>
-          <li><a href="contact.html" data-prefetch data-transition="slidefade">Contact</a></li>
-          <li><a href="properties.html"  data-transition="slidefade">Properties</a></li>
+          <li>
+            <a href="contact.html" data-prefetch data-transition="slidefade"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="properties.html" data-transition="slidefade">Properties</a>
+          </li>
           <li data-role="list-divider">Account</li>
-          <li><a href="index.html#login" data-transition="slidefade"  rel="external">Login</a></li>
-          <li><a href="index.html#register" data-transition="slidefade"  rel="external">Register</a></li>
+          <li>
+            <a
+              href="index.html#login"
+              data-transition="slidefade"
+              rel="external"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#register"
+              data-transition="slidefade"
+              rel="external"
+              >Register</a
+            >
+          </li>
         </ul>
       </div>
       <div data-role="header">
@@ -39,37 +70,38 @@
             class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
           ></a>
           <div class="back-home">
-              <a
-                href="index.html#login"
-                data-transition="slideFade"
-                data-icon="lock"
-                class="property"
-                rel="external"
-                title="login"
-              ></a>
-  
-              <a
-                href="index.html#register"
-                data-icon="user"
-                data-transition="slideFade"
-                rel="external"
-                title="register"
-              ></a>
-              <a
-                data-rel="back"
-                data-icon="back"
-                data-transition="slideFade"
-                class="back"
-                title="back"
-              ></a>
-              <a
-                href="/"
-                data-icon="home"
-                data-transition="slideFade"
-                class="home"
-                title="home"
-              ></a>
-            </div>
+            <a
+              href="index.html#login"
+              data-transition="slideFade"
+              data-icon="lock"
+              class="property"
+              rel="external"
+              title="login"
+            ></a>
+
+            <a
+              href="index.html#register"
+              data-icon="user"
+              data-transition="slideFade"
+              rel="external"
+              title="register"
+            ></a>
+            <a
+              data-rel="back"
+              data-icon="back"
+              data-transition="slideFade"
+              class="back"
+              title="back"
+            ></a>
+            <a
+              href="index.html#first"
+              rel="external"
+              data-icon="home"
+              data-transition="slideFade"
+              class="home"
+              title="home"
+            ></a>
+          </div>
         </div>
       </div>
       <div data-role="content" id="container" class="flex-container">
