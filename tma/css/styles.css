@@ -19,9 +19,9 @@ h1 {
   border-bottom: 4px solid #7aa7c6;
   margin-bottom: 40px;
 }
-#container {
-  padding: 0;
-  margin: 0;
+.container.ui-content {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .flex-container {
   display: flex;
@@ -75,9 +75,15 @@ h1 {
   height: 200px;
 }
 
-#ham {
-  padding: 0px;
-  margin-left: 25px;
+.ham.ui-link.ui-btn {
+  padding: 17px !important;
+  margin-left: 15px !important;
+  background-color:#7aa7c6;
+  border: 0 !important;
+}
+.ham.ui-link.ui-btn:hover{
+  background-color:#7aa7c6;
+
 }
 .ui-btn.lead {
   position: absolute;

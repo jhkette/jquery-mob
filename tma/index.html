@@ -16,7 +16,6 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <div data-role="page" id="first" data-theme="a">
       <div
@@ -25,9 +24,16 @@
         data-position="right"
         data-display="overlay"
       >
-        <ul data-role="listview">
+      <ul data-role="listview">
           <li data-role="list-divider">Zedland</li>
-          <li><a href="#first" data-transition="slidefade">Home</a></li>
+          <li>
+            <a
+              href="#first"
+              data-transition="slidefade"
+             
+              >Home</a
+            >
+          </li>
           <li><a href="about.html" data-transition="slidefade">About</a></li>
           <li>
             <a href="contact.html" data-prefetch data-transition="slidefade"
@@ -38,38 +44,59 @@
             <a href="properties.html" data-transition="slidefade">Properties</a>
           </li>
           <li data-role="list-divider">Account</li>
-          <li><a href="#login" data-transition="slidefade">Login</a></li>
-          <li><a href="#register" data-transition="slidefade">Register</a></li>
+          <li>
+            <a
+              href="#login"
+              data-transition="slidefade"
+              
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              href="#register"
+              data-transition="slidefade"
+              
+              >Register</a
+            >
+          </li>
         </ul>
       </div>
       <div data-role="header">
         <div data-role="navbar" class="header-nav">
           <a
             href="#navpanelhome"
-            id="ham"
+            class="ham"
+            data-icon="bars"
             class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
           ></a>
 
           <div class="back-home">
-            <a
-              href="#login"
-              data-transition="slideFade"
-              data-icon="lock"
-              class="property"
-              title="Login"
-              data-prefetch
-            ></a>
-
-            <a
-              href="#register"
-              data-icon="user"
-              data-transition="slideFade"
-              title="Register"
-            ></a>
-          </div>
+              <a
+                href="#register"
+                data-icon="user"
+                data-transition="slideFade"
+                title="register"
+              ></a>
+              <a
+                data-rel="back"
+                data-icon="back"
+                data-transition="slideFade"
+                class="back"
+                title="back"
+              ></a>
+              <a
+                href="#first"
+                data-icon="home"
+                data-transition="slideFade"
+                class="home"
+                title="home"
+              ></a>
+            </div>
+        
         </div>
       </div>
-      <div data-role="content" id="container">
+      <div data-role="content" class="container">
         <div class="lead-image">
           <h1>Welcome to Zedland</h1>
           <a
@@ -80,12 +107,9 @@
           >
         </div>
         <div class="intro">
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Accusantium consequuntur
-            modi reprehenderit. Veritatis hic fugit perferendis eius, aliquam
-            consectetur.
-          </p>
-        </div>
+        <!-- <h2>Accusantium consequuntur modi</h2> -->
+        <p>Lorem ipsum dolor sit amet consectetur. Accusantium consequuntur modi reprehenderit. Veritatis hic fugit perferendis eius, aliquam consectetur.</p>
+      </div>
         <a href="#login" data-transition="slidefade" class="ui-btn secondary"
           >Login<span style="font-size: 1.5em; color: #949494;"
             ><i class="fas fa-arrow-circle-right"></i></span
@@ -95,242 +119,237 @@
             ><i class="fas fa-arrow-circle-right"></i></span
         ></a>
         <div class="content-featured">
-          <div class="image">
-            <a href="featured.html" data-transition="slidefade"
-              ><img src="./images/design.jpg" alt="featured room"
-            /></a>
+            <div class="image">
+              <a href="featured.html" data-transition="slidefade"
+                ><img src="./images/design.jpg"
+              /></a>
+            </div>
+            <div class="feature-text">
+              <h3>Featured room</h3>
+              <p>
+                <a href="featured.html" data-transition="slidefade"
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+                  assumenda ipsam fugit. Quas aspernatur.</a
+                >
+              </p>
+            </div>
           </div>
-          <div class="feature-text">
-            <h3>Featured room</h3>
-            <p>
-              <a href="orchard.html" data-transition="slidefade"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-                assumenda ipsam fugit. Quas aspernatur.</a
-              >
-            </p>
-          </div>
-        </div>
       </div>
       <div data-role="footer" data-position="fixed" data-id="footernav">
-        <div data-role="navbar">
-          <ul>
-            <li><a href="contact.html" data-prefetch>Contact</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
+          <div data-role="navbar">
+            <ul>
+              <li><a href="contact.html" data-prefetch>Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
     </div>
     <div data-role="page" id="register" data-add-back-btn="true">
-      <div
-        data-role="panel"
-        id="navpanelregister"
-        data-position="right"
-        data-display="overlay"
-      >
-        <ul data-role="listview">
-          <li data-role="list-divider">Zedland</li>
-          <li><a href="#first" data-transition="slidefade">Home</a></li>
-          <li><a href="about.html" data-transition="slidefade">About</a></li>
-          <li>
-            <a href="contact.html" data-prefetch data-transition="slidefade"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a href="properties.html" data-transition="slidefade">Properties</a>
-          </li>
-          <li data-role="list-divider">Account</li>
-          <li><a href="#login" data-transition="slidefade">Login</a></li>
-          <li><a href="#register" data-transition="slidefade">Register</a></li>
-        </ul>
-      </div>
-      <div data-role="header">
-        <div data-role="navbar" class="header-nav">
-          <a
-            href="#navpanelregister"
-            id="ham"
-            class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
-          ></a>
-          <div class="back-home">
+        <div
+          data-role="panel"
+          id="navpanelregister"
+          data-position="right"
+          data-display="overlay"
+        >
+       
+      <ul data-role="listview">
+        <li><a href="index.html" data-transition="slidefade">Home</a></li>
+        <li><a href="about.html" data-transition="slidefade">About us</a></li>
+        <li><a href="properties.html" data-transition="slidefade">Search properties</a></li>
+        <li><a href="contact.html" data-transition="slidefade" data-prefetch>Contact</a></li>
+      </ul>
+        </div>
+        <div data-role="header">
+          <div data-role="navbar" class="header-nav">
             <a
-              href="#login"
-              data-transition="slideFade"
-              data-icon="lock"
-              class="property"
-              data-prefetch
+              href="#navpanelregister"
+              class="ham"
+              class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
             ></a>
-            <a
-              data-rel="back"
-              data-icon="back"
-              data-transition="slideFade"
-              class="back"
-            ></a>
-            <a
-              href="#first"
-              data-icon="home"
-              data-transition="slideFade"
-              class="home"
-              title="home"
-            ></a>
+            <div class="back-home">
+                <a
+                href="contact.html"
+                data-transition="slideFade"
+                data-icon="phone"
+                class="property"
+                data-prefetch
+              ></a>
+              <a data-rel="back" data-icon="back"  data-transition="slideFade" class="back"></a>
+              <a href="/" data-icon="home"  data-transition="slideFade" class="home" ></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div data-role="content" id="container">
-        <div class="intro">
-          <h1>Register</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-            assumenda ut sit nostrum pariatur enim ipsa asperiores excepturi
-            quis repellendus soluta quia amet, repellat necessitatibus
-            voluptatem quos aliquam. Nulla, nemo.
-          </p>
+        <div data-role="content" class="container">
+          <div class="intro">
+            <h1>Register</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+              assumenda ut sit nostrum pariatur enim ipsa asperiores excepturi
+              quis repellendus soluta quia amet, repellat necessitatibus
+              voluptatem quos aliquam. Nulla, nemo.
+            </p>
+          </div>
+          <form id="searchForm">
+            <div class="ui-field-contain">
+              <div class="location-container">
+                <div class="label"><label for ="location" >Location</label></div>
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="search"
+                  class="property-input"
+                />
+                
+              </div>
+              <div class="location-container">
+                <div class="label"><label for ="location" >Location</label></div>
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="search"
+                  class="property-input"
+                />
+                
+              </div>
+              <div class="location-container">
+                <div class="label"><label for ="location" >Location</label></div>
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="search"
+                  class="property-input"
+                />
+                
+              </div>
+              <div class="location-container">
+                <div class="label"><label for ="location" >Location</label></div>
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="search"
+                  class="property-input"
+                />
+                
+              </div>
+              <input type="submit" value="Submit" class="submit" />
+            </div>
+          </form>
         </div>
-        <form id="searchForm">
-          <div class="ui-field-contain">
-            <div class="location-container">
-              <div class="label"><label for="name">Name</label></div>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="name"
-                class="property-input"
-              />
+        <div data-role="footer" data-position="fixed" data-id="footernav">
+            <div data-role="navbar">
+              <ul>
+                <li><a href="contact.html" data-prefetch>Contact</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
             </div>
-            <div class="location-container">
-              <div class="label"><label for="password">Password</label></div>
-              <input
-                type="text"
-                name="password"
-                id="password"
-                placeholder="search"
-                class="property-input"
-              />
+          </div>
+      </div>
+      <div data-role="page" id="login" data-add-back-btn="true">
+          <div
+            data-role="panel"
+            id="navpanellogin"
+            data-position="right"
+            data-display="overlay"
+          >
+            <ul data-role="listview">
+              <li data-role="list-divider">Zedland</li>
+              <li><a href="#first" data-transition="slidefade">Home</a></li>
+              <li><a href="about.html" data-transition="slidefade">About</a></li>
+              <li>
+                <a href="contact.html" data-prefetch data-transition="slidefade"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="properties.html" data-transition="slidefade">Properties</a>
+              </li>
+              <li data-role="list-divider">Account</li>
+              <li><a href="#login" data-transition="slidefade">Login</a></li>
+              <li><a href="#register" data-transition="slidefade">Register</a></li>
+            </ul>
+          </div>
+          <div data-role="header">
+            <div data-role="navbar" class="header-nav">
+              <a
+                href="#navpanellogin"
+                class="ham"
+                data-icon="bars"
+                class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
+              ></a>
+              <div class="back-home">
+                <a
+                  href="#register"
+                  data-icon="user"
+                  data-transition="slideFade"
+                  title="register"
+                ></a>
+                <a
+                  data-rel="back"
+                  data-icon="back"
+                  data-transition="slideFade"
+                  class="back"
+                  title="back"
+                ></a>
+                <a
+                  href="#first"
+                  data-icon="home"
+                  data-transition="slideFade"
+                  class="home"
+                  title="home"
+                ></a>
+              </div>
             </div>
-            <div class="location-container">
-              <div class="label"><label for="email">Email</label></div>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="email"
-                class="property-input"
-              />
+          </div>
+          <div data-role="content" id="container">
+            <div class="intro">
+              <h1>Login</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+                assumenda ut sit nostrum pariatur enim ipsa asperiores excepturi
+                quis repellendus soluta quia amet, repellat necessitatibus
+                voluptatem quos aliquam. Nulla, nemo.
+              </p>
             </div>
+            <form id="searchForm">
+              <div class="ui-field-contain">
+                <div class="location-container">
+                  <div class="label"><label for="name">Name</label></div>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="search"
+                    class="property-input"
+                  />
+                </div>
+                <div class="location-container">
+                  <div class="label"><label for="password">Password</label></div>
+                  <input
+                    type="text"
+                    name="password"
+                    id="password"
+                    placeholder="search"
+                    class="property-input"
+                  />
+                </div>
+    
+                <input type="submit" value="Submit" class="submit" />
+              </div>
+            </form>
+          </div>
+          <div data-role="footer" data-position="fixed" data-id="footernav">
+            <div data-role="navbar">
+              <ul>
+                <li><a href="contact.html" data-prefetch>Contact</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
 
-            <input type="submit" value="Submit" class="submit" />
-          </div>
-        </form>
-      </div>
-      <div data-role="footer" data-position="fixed" data-id="footernav">
-        <div data-role="navbar">
-          <ul>
-            <li><a href="contact.html" data-prefetch>Contact</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div data-role="page" id="login" data-add-back-btn="true">
-      <div
-        data-role="panel"
-        id="navpanellogin"
-        data-position="right"
-        data-display="overlay"
-      >
-        <ul data-role="listview">
-          <li data-role="list-divider">Zedland</li>
-          <li><a href="#first" data-transition="slidefade">Home</a></li>
-          <li><a href="about.html" data-transition="slidefade">About</a></li>
-          <li>
-            <a href="contact.html" data-prefetch data-transition="slidefade"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a href="properties.html" data-transition="slidefade">Properties</a>
-          </li>
-          <li data-role="list-divider">Account</li>
-          <li><a href="#login" data-transition="slidefade">Login</a></li>
-          <li><a href="#register" data-transition="slidefade">Register</a></li>
-        </ul>
-      </div>
-      <div data-role="header">
-        <div data-role="navbar" class="header-nav">
-          <a
-            href="#navpanellogin"
-            id="ham"
-            class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
-          ></a>
-          <div class="back-home">
-            <a
-              href="#register"
-              data-icon="user"
-              data-transition="slideFade"
-              title="register"
-            ></a>
-            <a
-              data-rel="back"
-              data-icon="back"
-              data-transition="slideFade"
-              class="back"
-              title="back"
-            ></a>
-            <a
-              href="#first"
-              data-icon="home"
-              data-transition="slideFade"
-              class="home"
-              title="home"
-            ></a>
-          </div>
-        </div>
-      </div>
-      <div data-role="content" id="container">
-        <div class="intro">
-          <h1>Login</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-            assumenda ut sit nostrum pariatur enim ipsa asperiores excepturi
-            quis repellendus soluta quia amet, repellat necessitatibus
-            voluptatem quos aliquam. Nulla, nemo.
-          </p>
-        </div>
-        <form id="searchForm">
-          <div class="ui-field-contain">
-            <div class="location-container">
-              <div class="label"><label for="name">Name</label></div>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="search"
-                class="property-input"
-              />
-            </div>
-            <div class="location-container">
-              <div class="label"><label for="password">Password</label></div>
-              <input
-                type="text"
-                name="password"
-                id="password"
-                placeholder="search"
-                class="property-input"
-              />
-            </div>
-
-            <input type="submit" value="Submit" class="submit" />
-          </div>
-        </form>
-      </div>
-      <div data-role="footer" data-position="fixed" data-id="footernav">
-        <div data-role="navbar">
-          <ul>
-            <li><a href="contact.html" data-prefetch>Contact</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>

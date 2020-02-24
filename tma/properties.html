@@ -21,7 +21,7 @@
     <div data-role="page" id="first" data-add-back-btn="true">
       <div
         data-role="panel"
-        id="navpanel"
+        id="navpanelprop"
         data-position="right"
         data-display="overlay"
       >
@@ -66,8 +66,9 @@
       <div data-role="header">
         <div data-role="navbar" class="header-nav">
           <a
-            href="#navpanel"
-            id="ham"
+            href="#navpanelprop"
+            class="ham"
+            data-icon="bars"
             class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
           ></a>
           <div class="back-home">
@@ -105,7 +106,7 @@
           </div>
         </div>
       </div>
-      <div data-role="content" id="container">
+      <div data-role="content" class="container">
         <div class="intro">
           <h1>View all properties</h1>
           <p>

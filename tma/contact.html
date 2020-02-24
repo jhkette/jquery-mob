@@ -20,7 +20,7 @@
   <body>
     <div
       data-role="panel"
-      id="navpanel"
+      id="navpanelcontact"
       data-position="right"
       data-display="overlay"
     >
@@ -58,22 +58,44 @@
     </div>
     <div
       data-role="panel"
-      id="navpanel"
+      id="navpanelcontact"
       data-position="right"
       data-display="overlay"
     >
-      <h2>Panel Navigation</h2>
-      <ul data-role="listview">
-        <li><a href="index.html" data-transition="slidefade">Home</a></li>
-        <li><a href="about.html" data-transition="slidefade">About us</a></li>
+    <ul data-role="listview">
+        <li data-role="list-divider">Zedland</li>
         <li>
-          <a href="properties.html" data-transition="slidefade"
-            >Search properties</a
+          <a
+            href="index.html#first"
+            data-transition="slidefade"
+            rel="external"
+            >Home</a
+          >
+        </li>
+        <li><a href="about.html" data-transition="slidefade">About</a></li>
+        <li>
+          <a href="contact.html" data-prefetch data-transition="slidefade"
+            >Contact</a
           >
         </li>
         <li>
-          <a href="contact.html" data-transition="slidefade" data-prefetch
-            >Contact</a
+          <a href="properties.html" data-transition="slidefade">Properties</a>
+        </li>
+        <li data-role="list-divider">Account</li>
+        <li>
+          <a
+            href="index.html#login"
+            data-transition="slidefade"
+            rel="external"
+            >Login</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#register"
+            data-transition="slidefade"
+            rel="external"
+            >Register</a
           >
         </li>
       </ul>
@@ -82,7 +104,8 @@
       <div data-role="navbar" class="header-nav">
         <a
           href="#navpanel"
-          id="ham"
+          class="ham"
+          data-icon="bars"
           class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
         ></a>
         <div class="back-home">
@@ -120,7 +143,7 @@
         </div>
       </div>
     </div>
-    <div data-role="content" id="container">
+    <div data-role="content" class="container">
       <div class="lead-image small"></div>
       <div class="intro">
         <h1>Contact</h1>
